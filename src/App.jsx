@@ -68,6 +68,9 @@ function App() {
           className="text-black px-2 py-1 rounded"
           value={newTab}
           onChange={e => setNewTab(e.target.value)}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter') addTab()
+          }}
           placeholder="New tab name"
         />
         <button onClick={addTab} className="bg-green-600 px-3 py-1 rounded">Add Tab</button>
@@ -80,6 +83,9 @@ function App() {
               className="text-black px-2 py-1 rounded w-full"
               value={newEntry}
               onChange={e => setNewEntry(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === 'Enter') addEntry()
+              }}
               placeholder={`Add to "${activeTab}"`}
             />
             <button onClick={addEntry} className="bg-blue-600 mt-2 px-3 py-1 rounded">Add Entry</button>
