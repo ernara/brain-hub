@@ -1,0 +1,100 @@
+.container {
+  display: flex;
+  height: 100vh;
+  font-family: sans-serif;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.sidebar {
+  background-color: #2a2a2a;
+  border-right: 1px solid #444;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.editor {
+    background-color: #1e1e1e;
+    border-right: 1px solid #444;
+    padding: 1rem;
+  }
+
+.textArea {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-family: monospace;
+    resize: none;
+  }
+
+.addButton {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.noteList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.noteButton {
+  width: 100%;
+  background-color: #3a3a3a;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.noteButton:hover {
+  background-color: #555;
+}
+
+.activeNote {
+  width: 100%;
+  background: #7c3aed	;
+}
+
+.divider {
+  width: 4px;
+  min-width: 4px;
+  max-width: 4px;
+  background-color: #444;
+  cursor: col-resize;
+  user-select: none;
+  flex-shrink: 0;
+}
+
+.editorDragger {
+    width: 4px;
+    min-width: 4px;
+    max-width: 4px;
+    background-color: #444;
+    cursor: col-resize;
+    user-select: none;
+    flex-shrink: 0;
+  }
+
+.editorWrapper {
+  flex: 1;
+  display: flex;
+}
+
+
+
+
+
+
